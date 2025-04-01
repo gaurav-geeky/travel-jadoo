@@ -1,0 +1,78 @@
+* { 
+    margin: 0px; 
+    padding: 0px; 
+} 
+header { 
+    width: 100%;     
+    margin-top: 15px; 
+}
+
+nav #head{ 
+    display: flex; 
+    justify-content: space-around; 
+}  
+nav #head p { 
+    font-size: 20px; 
+    margin-left: 0px;
+}
+nav #head #log { 
+    font-size: 35px;
+} 
+.indbody1 { 
+    display: flex; 
+    justify-content: space-around;
+}
+
+#left {  
+    padding-top: 5vh; 
+    /* border: 1px solid red;  */
+    width: 40%; 
+}  
+
+#left h6 { 
+    font-size: 20px; 
+    color: rgb(250, 71, 71);
+} 
+
+#left h1 { 
+    font-size: 90px; 
+    line-height: 12vh; 
+} 
+
+#left p { 
+    width: 75%; 
+    margin: 20px 0px; 
+}
+#left h5 { 
+    background: orange; 
+    border-radius: 10%; 
+    margin: 20px;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh; 
+    width: 100px;
+}
+
+
+.indbody2 { 
+    width: 100%; 
+    height: 40vh; 
+    text-align: center; 
+    padding-top: 50px;
+}  
+.indbody2 h6 { 
+    font-size: 14px;
+}
+.indbody2 #service { 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px;
+}
+#service .one { 
+    width: 270px; 
+    height: 180px; 
+}
+
+
