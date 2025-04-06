@@ -297,7 +297,35 @@ nav #head #log {
     margin: 10px 0px; 
 }
 
-
+.indbody6 { 
+    width: 100%; 
+    height: 35vh; 
+    background: rgb(244, 244, 244); 
+} 
+.indbody6 .companion { 
+    height: 30vh; 
+    width: auto; 
+    margin: 20px; 
+}  
+.indbody6 .companion h2 { 
+    padding: 10px; 
+} 
+.indbody6 .companion h2 p { 
+    font-size: 15px; 
+    color: blue;
+}
+.indbody6 .companion #partner { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    margin-left: 20%;
+}
+.indbody6 .companion #partner img { 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    margin: 10px 0px ; 
+}
 
 
 
