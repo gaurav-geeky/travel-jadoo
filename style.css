@@ -69,7 +69,7 @@ nav #head #log {
     width: 40px; 
     border-radius: 50%; 
     background-color: rgb(243, 115, 51);
-    /* here is play button  i */
+/*                                          here is play button  i */
 } 
 #left #play span i { 
     font-size: 20px; 
@@ -82,10 +82,10 @@ nav #head #log {
     align-items: center; 
     justify-items: center;
     gap: 20px; 
-    /* here is find out more and play i */
+/*                              here is find out more and play i */
 } 
 
-                    /* index body 2 */ 
+/*                             index body 2 */ 
 .indbody2 { 
     width: 100%; 
     height: 40vh; 
@@ -102,8 +102,6 @@ nav #head #log {
 .indbody2 #title { 
     width: 100%;
     display: grid; 
-    /* margin: auto;  */
-    
 }
 .indbody2 #service { 
     margin-top: 25px;
@@ -124,13 +122,10 @@ nav #head #log {
     width: 70px; 
     height: 70px; 
 }
-
-                    /* index body 3 */ 
-
+/*                          index body 3 */ 
 .indbody3 { 
     width: 100%; 
     height: 58vh; 
-    /* background: rgb(231, 231, 231);    */ 
 } 
 .indbody3 #destination { 
     display: grid; 
@@ -160,16 +155,15 @@ nav #head #log {
 .indbody3 #places .place h4, .indbody3 #places .place p { 
     margin: 5px 0px; 
 }
-                    /* index body 4 */ 
+/*                              index body 4 */ 
 .indbody4 { 
     width: 100%; 
-    height: 60vh; 
+    height: 55vh; 
     background: rgb(244, 244, 244); 
     display: grid; 
 } 
-                                                                /* booking steps*/
+/*                                                    booking steps*/
 .indbody4 .trip #booktrip { 
-
     width: 45%; 
     height: auto; 
     padding: 10px;
@@ -262,13 +256,13 @@ nav #head #log {
 
 .indbody5 { 
     width: 100%; 
-    height: 33vh; 
+    height: 30vh; 
 } 
 .indbody5 #body5 { 
     display: flex; 
     justify-content: space-around;
     align-items: center; 
-    padding: 40px 0px; 
+    padding: 20px 0px; 
 }
 #body5 .testi { 
     width: 300px;
@@ -312,7 +306,6 @@ nav #head #log {
 } 
 .indbody6 .companion h2 p { 
     font-size: 15px; 
-    color: blue;
 }
 .indbody6 .companion #partner { 
     display: flex;
@@ -326,9 +319,38 @@ nav #head #log {
     border-radius: 50%;
     margin: 10px 0px ; 
 }
+/*                                          flight page     */
+#flight1 { 
+    width: 100% ;
+    background-image: url('flights/flight1.jpg'); 
+    background-repeat: no-repeat;    
+    background-size: cover; 
+    height: 100vh;
+}
 
-
-
+#flight1 .search { 
+    width: 40%;
+    background: rgb(74, 169, 169); 
+    border: 1px solid red;
+} 
+.search input { 
+    border: none;
+} 
+.search p { 
+    border: 1px solid rgb(169, 168, 168); 
+    width: 60%; 
+    height: 50%;
+}
+#flight1 #bookair { 
+    display: grid;
+    /* justify-content: start; */
+    grid-template-columns: auto auto ;
+}
+#flight1 #passenger { 
+    display: flex; 
+    /* justify-content: start; */
+    gap: 10px;
+}
 
 
 
