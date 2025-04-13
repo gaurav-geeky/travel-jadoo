@@ -30,62 +30,167 @@
 
     <main>
         <section id="flight1">
-            <article class="search">
-                <article id="bookair">
-                    <div>
-                        From <br>
-                        <p><input name="place" id="place" type="text" placeholder="City/Airport"> <i
-                                class="fa-solid fa-magnifying-glass" style="color: rgb(245, 96, 96);"></i> </p>
-                    </div>
-                    <div>
-                        To <br>
-                        <p><input name="place" id="place" type="text" placeholder="City/Airport">
-                            <i class="fa-solid fa-magnifying-glass" style="color: rgb(245, 96, 96);"></i>
-                        </p>
-                    </div>
-
-                    <div>
-                        Departure Date <br>
-                        <p><input name="date" id="place" type="date" placeholder="Date">
-                            <i class="fa-solid fa-calendar-days" style="color: rgb(245, 96, 96);"></i>
-                        </p>
-                    </div>
-                    <div>
-                        Return Date <br>
-                        <p><input name="date" id="place" type="date" placeholder="Date">
-                            <i class="fa-solid fa-calendar-days" style="color: rgb(245, 96, 96);"></i>
-                        </p>
-                    </div>
-                </article>
-                <article id="passenger">
-
-                    <div>
-                        Adult <br>
-                        <p> <input name="adult" id="person" type="number"> </p>
-                    </div>
-                    <div>
-                        Child <br>
-                        <p> <input name="child" id="person" type="number"> </p>
-                    </div>
-                    <div>
-                        Infant <br>
-                        <p> <input name="infant" id="person" type="number"> </p>
-                    </div>
-                    <div>
-                        Senior <br>
-                        <p> <input name="senior" id="person" type="number"> </p>
-                    </div>
-
-                </article>
-                <article id="booknow">
-                    <button name="book" type="submit"> Book Now</button>
+            <!--                              body 1 -->
+            <article id="air">
+                <h1>Search for a Flight</h1>
+                <article class="search">
+                    <!--                             search  -->
+                    <article id="bookair">
+                        <div class="area">
+                            From
+                            <p><label for="place"></label>
+                                <input name="place" id="place" type="text" placeholder="   City/Airport">
+                                <i class="fa-solid fa-magnifying-glass" style="color: rgb(245, 96, 96);"></i>
+                            </p>
+                        </div>
+                        <div class="area">
+                            To
+                            <p> <label for="place"></label>
+                                <input name="place" id="place" type="text" placeholder="   City/Airport">
+                                <i class="fa-solid fa-magnifying-glass" style="color: rgb(245, 96, 96);"></i>
+                            </p>
+                        </div>
+                        <div class="area">
+                            Departure Date
+                            <p> <label for="place"></label>
+                                <input name="date" id="place" type="date" placeholder="Date">
+                                <i class="fa-solid fa-calendar-days" style="color: rgb(245, 96, 96);"></i>
+                            </p>
+                        </div>
+                        <div class="area">
+                            Return Date
+                            <p> <label for="place"></label>
+                                <input name="date" id="place" type="date" placeholder="Date">
+                                <i class="fa-solid fa-calendar-days" style="color: rgb(245, 96, 96);"></i>
+                            </p>
+                        </div>
+                    </article>
+                    <!--                         passenger  -->
+                    <article id="passenger">
+                        <div class="area">
+                            Adult
+                            <p> <label for="person"></label> <input name="adult" id="person" type="number"> </p>
+                        </div>
+                        <div class="area">
+                            Child
+                            <p> <label for="person"></label> <input name="child" id="person" type="number"> </p>
+                        </div>
+                        <div class="area">
+                            Infant
+                            <p> <label for="person"></label> <input name="infant" id="person" type="number"> </p>
+                        </div>
+                        <div class="area">
+                            Senior
+                            <p> <label for="person"></label> <input name="senior" id="person" type="number"> </p>
+                        </div>
+                    </article>
+                    <!--                       book now  -->
+                    <article id="booknow">
+                        <button name="book" type="submit"> Book Now</button>
+                    </article>
 
                 </article>
             </article>
-
         </section>
 
+        <section id="flight2">
+            <!--                                    body 2 -->
+            <article id="todaydeal">
+                <h1> <span>TODAY'S</span> TOP INTERNATIONAL DEALS </h1>
 
+                <article id="today">
+                    
+                    <div class="deal">
+                        <img src="flights/brazil.jpg" alt="pic"> <br>
+                        <h5>
+                            <p>Brazil</p> &star; &star; &star; &star; &star;
+                        </h5>
+                        <p>Brazil is a popular tourist destination offering diverse attractions, from iconic landmarks
+                            like Christ the Redeemer in Rio de Janeiro to the Amazon rainforest and beautiful beaches
+                        </p>
+                        <h6>&dollar; 59.99 </h6>
+                    </div>
+                    <div class="deal">
+                        <img src="flights/dubai.jpg" alt="pic"> <br>
+                        <h5>
+                            <p>Dubai</p> &star; &star; &star; &star; &star;
+                        </h5>
+                        <p>Dubai is a major global tourism destination, attracting millions of visitors annually. It's
+                            known for its luxury hotels, modern architecture, shopping malls, and desert adventures.
+                        </p>
+                        <h6>&dollar; 69.94 </h6>
+                    </div>
+                    <div class="deal">
+                        <img src="flights/hongkong.jpg" alt="pic"> <br>
+                        <h5>
+                            <p>Hong Kong </p> &star; &star; &star; &star; &star;
+                        </h5>
+                        <p>Hong Kong is a popular tourist destination renowned for its blend of modern and traditional
+                            attractions, diverse cuisine, vibrant nightlife, and stunning natural beauty.</p>
+                        <h6>&dollar; 55.59 </h6>
+                    </div>
+                    <div class="deal">
+                        <img src="flights/indonesia.jpg" alt="pic"> <br>
+                        <h5>
+                            <p>Indonesia</p> &star; &star; &star; &star; &star;
+                        </h5>
+                        <p>Indonesia offers a diverse range of cities and attractions for tourists, from bustling
+                            capital Jakarta to the island paradise of Bali and the cultural heart of Yogyakarta.</p>
+                        <h6>&dollar; 57.49 </h6>
+                    </div>
+                    <div class="deal">
+                        <img src="flights/Paris.jpg" alt="pic"> <br>
+                        <h5>
+                            <p>Paris</p> &star; &star; &star; &star; &star;
+                        </h5>
+                        <p>Paris is a major global tourism destination, attracting millions of visitors annually, and
+                            its tourism sector contributes significantly to the city's economy.</p>
+                        <h6>&dollar; 58.89 </h6>
+                    </div>
+                    <div class="deal">
+                        <img src="flights/sydney.jpg" alt="pic"> <br>
+                        <h5>
+                            <p>Sydney </p> &star; &star; &star; &star; &star;
+                        </h5>
+                        <p>Sydney is a major international tourism destination, attracting millions of visitors
+                            annually.</p>
+                        <h6>&dollar; 55.59 </h6>
+                    </div>
+
+                </article> 
+            </article>
+        </section>
+
+        <section id="flight3"> 
+            <article id="why">
+                <h1> <span> WHY </span> CHOOSE US </h1>
+                <p>Like what you see? Start now and check out what you need.</p>
+
+                <article id="feature"> 
+                    <div class="choose"> 
+                        <img src="flights/travel.png" alt="pic">
+                        <h3>Amazing Travel</h3>
+                        <p>We deliver an amazing Travelling experience to our customers with lots a seasonal packages and much more. You can enjoy your journey with </p>
+                    </div> 
+                    <div class="choose"> 
+                        <img src="flights/explore.png" alt="pic">
+                        <h3>Discover</h3>
+                        <p></p>
+                    </div> 
+                    <div class="choose"> 
+                        <img src="flights/pin.png" alt="pic">
+                        <h3>Book Your Trip</h3>
+                        <p></p>
+                    </div> 
+                    <div class="choose"> 
+                        <img src="flights/support.png" alt="pic">
+                        <h3>Nice Support</h3>
+                        <p></p>
+                    </div> 
+                    
+                </article>
+            </article>
+        </section>
     </main>
 
 </body>

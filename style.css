@@ -1,6 +1,7 @@
 * { 
     margin: 0px; 
     padding: 0px; 
+    box-sizing: border-box; 
 } 
 header { 
     width: 100%;       
@@ -203,7 +204,7 @@ nav #head #log {
     display: grid; 
     align-items: center; 
     justify-content: center;
-    border-radius: 10%; 
+    border-radius: 20px; 
     background: rgb(223, 243, 251);
     /* margin: auto;  */
 }
@@ -222,12 +223,12 @@ nav #head #log {
                                 /* rome trip */
 .indbody4 #rome { 
     padding: 10px; 
-    width: 180px; 
-    height: 90px; 
-    border-radius: 20%; 
+    width: 200px; 
+    height: 100px; 
+    border-radius: 15px; 
     position: absolute; 
-    right: 40px;
-    top: 1610px;
+    right: 2%;
+    top: 211%;
     background: white;
 
     /* bottom: 80%;  */
@@ -237,7 +238,7 @@ nav #head #log {
     display: flex; 
     justify-content: center; 
     gap: 10px;
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
 } 
 .indbody4 #rome .rometrip img { 
     width: 50px; 
@@ -245,7 +246,7 @@ nav #head #log {
     border-radius: 50%;
 } 
  #rome .rometrip #ongoing { 
-    line-height: 25px; 
+    line-height: 20px; 
 } 
 #rome .complete { 
     border: 1px solid blue; 
@@ -319,38 +320,157 @@ nav #head #log {
     border-radius: 50%;
     margin: 10px 0px ; 
 }
-/*                                          flight page     */
+/*                                          flight body 1     */
 #flight1 { 
     width: 100% ;
-    background-image: url('flights/flight1.jpg'); 
+    background-image: url('flights/airp.png');  
     background-repeat: no-repeat;    
     background-size: cover; 
-    height: 100vh;
+    height: 100vh; 
+}
+/*                                      air    search area*/
+#air { 
+    width: 35%; 
+    position: absolute;
+    right: 5%;
+    top: 20%; 
+}
+#flight1 #air .search { 
+    width: auto;
+    background: rgb(82, 81, 81); 
+    font-size: 18px; 
+    padding: 10px; 
+    border-radius: 10px; 
+    color: white; 
+    box-shadow: 4px 4px 7px black;
+
+}  
+#flight1 #air h1 { 
+    font-weight: normal; 
+    font-size: 30px; 
+    padding: 5px 30px; 
+    color: yellow;
+}
+/*                                  arrival departure    */
+#air .search #bookair input { 
+    border: none; 
+    width: 225px;
+    height: 25px; 
+} 
+#air .search p { 
+    width: auto; 
+    height: 27px; 
+    padding: 2px 0px; 
+    background: white;
+} 
+#air .search .area { 
+    padding: 5px 0px;
+}
+#flight1 #air #bookair { 
+    display: grid;
+    grid-template-columns: auto auto ; 
+    justify-content: space-between;
+}  
+/*                                  passengers      */
+#flight1 #air #passenger { 
+    display: flex;  
+    justify-content: space-between;
+}
+#passenger input { 
+    border: none; 
+    width: 125px;
+    height: 25px;
+} 
+/*                                  book now      */
+#air .search #booknow { 
+    display: grid;
+    justify-content: end;
+} 
+#air .search button { 
+    border: none; 
+    width: 100px;
+    height: 30px;
+    font-size: 20px; 
+    margin: 10px;  
+    background: rgb(239, 239, 100);
+}  
+/*                                      flight body 2 */
+#flight2 { 
+    width: 100%;
+    height: 35vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+} 
+#flight2 h1 { 
+    text-align: center; 
+    font-size: 26px; 
+    padding: 5px; 
+    color: white; 
+} 
+#flight2 h1 span { 
+    color: red; 
+} 
+#flight2 #todaydeal { 
+    width: 1140px; 
+    height: auto; 
+    /* border: 1px solid orange;  */
+    position: absolute;
+    left: 12%; 
+    top: 85%;
+}
+#today { 
+    width: 1140px;          /*  scroll bar width  should be of  image length and around      */
+    height: auto;
+    /* border: 1px solid red;  */
+    display: grid; 
+    grid-template-columns: repeat(6, 410px);   /*  6 images     380 px width taken by an image  */
+    overflow-x: scroll;
+    scrollbar-width: none;  
+    padding: 20px;  
+    /* background: rgb(235, 235, 164); */
+}
+#today .deal img { 
+    width: 380px; 
+    height: 200px;
+}
+#today .deal {  
+    /* border: 1px solid brown;  */
+    width: 380px; 
+    height: 320px; 
+    background: rgb(240, 240, 240); 
+    box-shadow: 4px 4px 7px rgb(132, 132, 132);   
+}
+#today .deal h5, #today .deal p { 
+    display: flex;
+    justify-content: space-between;  
+    /* border: 1px solid orange;  */
+    padding: 0px 5px;  
+    font-size: 15px;
+}  
+#today .deal h6 { 
+    text-align: end; 
+    font-size: 13px;
+    padding-right: 10px;
+    color: red;
+} 
+#today .deal:hover { 
+    transform: scale(1.1);
 }
 
-#flight1 .search { 
-    width: 40%;
-    background: rgb(74, 169, 169); 
-    border: 1px solid red;
-} 
-.search input { 
-    border: none;
-} 
-.search p { 
-    border: 1px solid rgb(169, 168, 168); 
-    width: 60%; 
-    height: 50%;
-}
-#flight1 #bookair { 
-    display: grid;
-    /* justify-content: start; */
-    grid-template-columns: auto auto ;
-}
-#flight1 #passenger { 
-    display: flex; 
-    /* justify-content: start; */
-    gap: 10px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
