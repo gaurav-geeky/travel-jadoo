@@ -55,7 +55,7 @@ nav #head #log {
 }
 #left h5 { 
     background: orange; 
-    border-radius: 10%; 
+    border-radius: 5px; 
     margin: 0px;
     text-align: center; 
     display: flex;
@@ -327,13 +327,14 @@ nav #head #log {
     background-repeat: no-repeat;    
     background-size: cover; 
     height: 100vh; 
-}
+}  
 /*                                      air    search area*/
 #air { 
-    width: 35%; 
+    width: 40%; 
     position: absolute;
     right: 5%;
     top: 20%; 
+    height: auto;
 }
 #flight1 #air .search { 
     width: auto;
@@ -388,11 +389,13 @@ nav #head #log {
 } 
 #air .search button { 
     border: none; 
-    width: 100px;
+    width: 120px;
     height: 30px;
     font-size: 20px; 
     margin: 10px;  
-    background: rgb(239, 239, 100);
+    background: rgb(239, 239, 100); 
+    border-radius: 25px; 
+    padding: 5px;
 }  
 /*                                      flight body 2 */
 #flight2 { 
@@ -428,7 +431,7 @@ nav #head #log {
     grid-template-columns: repeat(6, 410px);   /*  6 images     380 px width taken by an image  */
     overflow-x: scroll;
     scrollbar-width: none;  
-    padding: 20px;  
+    padding: 10px;  
     /* background: rgb(235, 235, 164); */
 }
 #today .deal img { 
@@ -456,14 +459,51 @@ nav #head #log {
     color: red;
 } 
 #today .deal:hover { 
-    transform: scale(1.1);
+    transform: scale(1.10);
+} 
+/*                                             flight body 3 */
+#flight3 { 
+    width: 100%;
+    height: 50vh;  
+    /* border: 1px solid black;  */
+} 
+#flight3 #why h1 span { 
+    color: red; 
+} 
+#flight3 #why h1 { 
+    font-size: 25px; 
+    padding: 12px; 
+    text-align: center; 
+} 
+
+#flight3 #why h4 { 
+    font-size: 18px; 
+    text-align: center; 
 }
-
-
-
-
-
-
+#flight3 #why #feature { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    padding: 5px;  
+    height: auto; 
+} 
+#flight3 #why #feature .choose  { 
+    width: 250px;
+    height: 250px; 
+    text-align: center; 
+    padding: 5px;  
+} 
+#feature .choose h3 { 
+    padding: 5px;  
+} 
+#feature .choose #red { 
+    color: red;
+    padding: 5px;
+}
+#feature .choose img { 
+    width: 100px;
+    height: 100px;
+}
 
 
 
