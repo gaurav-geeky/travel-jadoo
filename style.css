@@ -504,13 +504,57 @@ nav #head #log {
     width: 100px;
     height: 100px;
 }
+/*                                             flight body 4 */
+#flight4 { 
+    width: 100%;
+    height: 55vh; 
+    /* background: rgb(144, 210, 231);  */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid yellow; */
+}
+#flight4 h3 { 
+    font-size: 25px;
+    font-family: Helvetica ; 
+    padding: 20px ;
+}
+#flight4 .otherservice { 
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red;   */
+    height: auto; 
 
-
-
-
-
-
-
+}
+.otherservice #servers { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 10px; 
+    /* border: 1px solid green; */
+}
+#servers .serv4 { 
+    width: 250px;
+    height: 310px; 
+    /* border: 1px solid blue; */
+}
+.serv4 div { 
+    width: 250px;
+    height: 230px; 
+    border-radius: 20px; 
+    overflow: hidden;
+}
+.serv4 img { 
+    width: 250px;
+    height: 230px; 
+    border-radius: 20px; 
+    transition: transform 2s ease-in-out;  
+}
+.serv4 img:hover { 
+    transform: scale(1.09);
+    opacity: 0.9;
+}
 
 
 
