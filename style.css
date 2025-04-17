@@ -4,11 +4,17 @@
     box-sizing: border-box; 
 } 
 header { 
-    width: 100%;       
+    width: 100%;    
+    height: auto;   
     background: rgb(244, 244, 244); 
-    /* position: fixed;  */
+    position: fixed; 
+    z-index: 20; 
+    top: 0%;
 }
-
+nav #head a { 
+    text-decoration: none;
+    color: black;  
+}
 nav #head{ 
     display: flex; 
     justify-content: space-around; 
@@ -19,12 +25,16 @@ nav #head p {
     margin-left: 0px;
 }
 nav #head #log { 
-    font-size: 35px;
+    font-size: 30px; 
+    font-family: Pacifico; 
+    /* color: blue;   */
+    /* background: red; */
 } 
                     /* index body 1 */ 
 .indbody1 { 
     width: 100%; 
     height: auto; 
+    margin-top: 50px; 
 }
 .indbody1 .body1 {  
     height: auto; 
@@ -91,7 +101,7 @@ nav #head #log {
     width: 100%; 
     height: 40vh; 
     padding: 20px 0px; 
-    background: rgb(244, 244, 244); 
+    /* background: rgb(244, 244, 244);  */
 }  
 .indbody2 h6 { 
     font-size: 14px; 
@@ -160,7 +170,7 @@ nav #head #log {
 .indbody4 { 
     width: 100%; 
     height: 55vh; 
-    background: rgb(244, 244, 244); 
+    /* background: rgb(244, 244, 244);  */
     display: grid; 
 } 
 /*                                                    booking steps*/
@@ -327,6 +337,7 @@ nav #head #log {
     background-repeat: no-repeat;    
     background-size: cover; 
     height: 100vh; 
+    margin-top: 50px; 
 }  
 /*                                      air    search area*/
 #air { 
@@ -555,6 +566,47 @@ nav #head #log {
     transform: scale(1.09);
     opacity: 0.9;
 }
+/*                                      flight body 5 */
+#flight5 { 
+    width: 100%;
+    height:55vh; 
+    /* background: lightblue;  */
+    padding: 0px 10px;
+}
+#flight5 h2 {
+    padding: 10px;
+} 
+/*                                    flight article in which image & text */
+#flight5 article { 
+    display: flex;
+}
+#flight5 article #box1 img { 
+    width: 350px;
+    height: auto; 
+    padding: 10px;  
+    /* border: 1px solid green;  */
+}  
+#flight5 article #box1  { 
+    /* border: 1px solid green;  */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}  
+#flight5 article #box2  { 
+    /* border: 1px solid green;  */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}  
+#flight5 article #box2 p  { 
+    font-size: 17px; 
+    padding: 10px;   
+}  
+#flight5 article #box2 p a { 
+    text-decoration: none;
+    color: blue;
+}
+
 
 
 
