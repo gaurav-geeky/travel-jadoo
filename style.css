@@ -569,7 +569,7 @@ nav #head #log {
 /*                                      flight body 5 */
 #flight5 { 
     width: 100%;
-    height:55vh; 
+    height: 55vh; 
     /* background: lightblue;  */
     padding: 0px 10px;
 }
@@ -592,12 +592,7 @@ nav #head #log {
     justify-content: center;
     align-items: center;
 }  
-#flight5 article #box2  { 
-    /* border: 1px solid green;  */
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}  
+
 #flight5 article #box2 p  { 
     font-size: 17px; 
     padding: 10px;   
