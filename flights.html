@@ -22,11 +22,11 @@
     <header>
         <nav>
             <div id="head">
-                <div id="log"> <a href="index.html">Jadoo</a> &emsp; &emsp; &emsp; </div>
+                <div id="log"> <a href="index.html"> Jadoo </a> &emsp; &emsp; &emsp; </div>
                 <p>Destinations</p>
-                <p> <a href="signup.html">Sign-up</a></p> 
-                <p> <a href="flights.html"> Flights</a> </p>
-                <p>Login</p>
+                <p> <a href="signup.html"> Sign-up </a></p>
+                <p> <a href="flights.html"> Book Flights </a> </p>
+                <p> <a href="login.html"> Login </a> </p>
             </div>
         </nav>
     </header>
@@ -38,7 +38,7 @@
                 <h1>Search for a Flight</h1>
                 <article class="search">
                     <!--                             search  -->
-                    <article id="bookair">
+                    <form id="bookair">
                         <div class="area">
                             From
                             <p><label for="place"></label>
@@ -67,9 +67,11 @@
                                 <i class="fa-solid fa-calendar-days" style="color: rgb(245, 96, 96);"></i>
                             </p>
                         </div>
-                    </article>
+                    </form> 
+
+                    
                     <!--                         passenger  -->
-                    <article id="passenger">
+                    <form id="passenger">
                         <div class="area">
                             Adult
                             <p> <label for="person"></label> <input name="adult" id="person" type="number"> </p>
@@ -86,7 +88,8 @@
                             Senior
                             <p> <label for="person"></label> <input name="senior" id="person" type="number"> </p>
                         </div>
-                    </article>
+                    </form>
+
                     <!--                       book now  -->
                     <article id="booknow">
                         <button name="book" type="submit"> Book Now</button>

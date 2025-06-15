@@ -8,7 +8,7 @@ header {
     height: auto;   
     background: rgb(244, 244, 244); 
     position: fixed; 
-    z-index: 20; 
+    z-index: 10; 
     top: 0%;
 }
 nav #head a { 
@@ -19,6 +19,7 @@ nav #head{
     display: flex; 
     justify-content: space-around; 
     padding-top: 10px; 
+    
 }  
 nav #head p { 
     font-size: 20px; 
@@ -33,9 +34,10 @@ nav #head #log a {
 } 
                     /* index body 1 */ 
 .indbody1 { 
-    width: 100%; 
+    width: auto; 
     height: auto; 
-    margin-top: 50px; 
+    margin-top: 63px; 
+    /* border: 1px solid red;  */
 }
 .indbody1 .body1 {  
     height: auto; 
@@ -179,7 +181,7 @@ nav #head #log a {
     width: 45%; 
     height: auto; 
     padding: 10px; 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .indbody4 .trip #booktrip ul li {
     list-style: none;  
@@ -339,7 +341,9 @@ nav #head #log a {
     background-repeat: no-repeat;    
     background-size: cover; 
     height: 100vh; 
-    margin-top: 50px; 
+    margin-top: 62px; 
+    /* border: 1px solid red;  */
+    
 }  
 /*                                      air    search area*/
 #air { 
@@ -603,6 +607,89 @@ nav #head #log a {
     text-decoration: none;
     color: blue;
 }
+
+/* sign up body 1  i.e.  registration page */ 
+
+#register  { 
+    /* border: 1px solid blue;  */
+    display: flex;  
+    align-items: center;
+    justify-content: space-around; 
+    height: 100vh; 
+    background-color: rgb(217, 244, 244); 
+    position: relative; 
+    top: 63px; 
+}
+
+#register img { 
+    height: 100vh;
+}
+#register form input { 
+    font-size: 25px; 
+    width: 550px; 
+    /* border-radius: 2px; */
+}
+#register form { 
+    font-size: 20px; 
+    /* border: 1px solid red;  */
+}
+#register form p { 
+    margin: 5px;
+} 
+#register form button { 
+    font-size: 20px; 
+    padding: 3px;  
+    margin: 5px; 
+    width: 200px; 
+    background-color: rgb(57, 57, 177); 
+    color: white; 
+}
+
+/*  login page  user login */
+
+#Loginpage  { 
+    /* border: 1px solid blue;  */
+    display: flex;  
+    align-items: center;
+    justify-content: space-around; 
+    height: 100vh; 
+    background-color: rgb(241, 234, 219); 
+    position: relative; 
+    top: 63px; 
+}
+
+#Loginpage img { 
+    height: 100vh;
+}
+#Loginpage form input { 
+    font-size: 25px; 
+    width: 550px; 
+    /* border-radius: 2px; */
+}
+#Loginpage form { 
+    font-size: 20px; 
+    /* border: 1px solid red;  */
+}
+#Loginpage form p { 
+    margin: 5px;
+} 
+#Loginpage form button { 
+    font-size: 20px; 
+    padding: 3px;  
+    margin: 5px; 
+    width: 200px; 
+    background-color: rgb(57, 57, 177); 
+    color: white; 
+}
+
+
+
+
+
+
+
+
+
 
 
 
