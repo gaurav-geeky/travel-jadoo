@@ -33,30 +33,37 @@
     <main>
         <article id="register">
             <form>
-                <h1>User Registration </h1> <br> 
-                <p>Full Name</p> <p class="regerr" id="errname"></p> 
-                <input type="name" name="name" id="name"> <br> <br>
+                <h1>User Registration </h1> 
+                <br>
+                <p class="regerr" id="errname"></p> 
+                <div> Full Name</div> 
+                <input type="name" name="name" id="name"> <br> 
 
-                <p>Email Id</p> <p class="regerr" id="erremail"></p> 
-                <input type="email" name="email" id="email"> <br><br>
+                <p class="regerr" id="erremail"></p>
+                <div> Email Id</div>  
+                <input type="email" name="email" id="email"> <br>
 
-                <p>Contact No.</p> <p class="regerr" id="errcontact"></p> 
-                <input type="contact" name="contact" id="contact"> <br> <br>
+                <p class="regerr" id="errcontact"></p> 
+                <div> Contact No.</div> 
+                <input type="contact" name="contact" id="contact"> <br> 
 
-                <p>Password</p> <p class="regerr" id="errpass"></p> 
-                <input type="password" name="password" id="password">  <br> <br>
+                <p class="regerr" id="errpass"> </p> 
+                <div> Password</div> 
+                <input type="password" name="password" id="password"> <br> 
 
-                <p>Confirm Password</p> <p class="regerr" id="errcpass"></p> 
-                <input type="cpassword" name="cpassword" id="cpassword">  <br> <br>
+                <p class="regerr" id="errcpass"></p>
+                <div> Confirm Password</div>   
+                <input type="cpassword" name="cpassword" id="cpassword"> <br> 
 
-                <button name="clear" type="clear" id="clear" onclick="return clear()"> Clear</button> &ensp; &ensp; &ensp; 
+                <button name="clear" type="clear" id="clear" onclick="return clear()"> Clear</button> &ensp; &ensp;
+                &ensp;
 
-                <button name="signup" type="signup" id="signup" onclick="return validate()"> Sign-Up</button>  
+                <button name="signup" type="signup" id="signup" onclick="return validate()"> Sign-Up</button>
 
-                <p>Already have an Account? Login</p>
-            </form> 
+                <p>Already have an Account? <a href="login.html"> Login </a></p>
+            </form>
 
-            <img src="/register/regist.jpg" alt="register"> 
+            <img src="/register/regist.jpg" alt="register">
         </article>
 
     </main>

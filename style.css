@@ -37,7 +37,7 @@ nav #head #log a {
     width: auto; 
     height: auto; 
     margin-top: 63px; 
-    /* border: 1px solid red;  */
+    border: 1px solid red; 
 }
 .indbody1 .body1 {  
     height: auto; 
@@ -616,7 +616,7 @@ nav #head #log a {
     align-items: center;
     justify-content: space-around; 
     height: 100vh; 
-    background-color: rgb(217, 244, 244); 
+    background: linear-gradient(rgb(193, 246, 249) 10%, rgb(159, 243, 230) 90%); 
     position: relative; 
     top: 63px; 
 }
@@ -625,16 +625,18 @@ nav #head #log a {
     height: 100vh;
 }
 #register form input { 
-    font-size: 25px; 
+    font-size: 18px; 
     width: 550px; 
+    font-family: 'Times New Roman'; 
+    padding: 5px; 
     /* border-radius: 2px; */
 }
 #register form { 
-    font-size: 20px; 
+    font-size: 18px; 
     /* border: 1px solid red;  */
 }
 #register form p { 
-    margin: 5px;
+    margin: 10px; 
 } 
 #register form button { 
     font-size: 20px; 
@@ -643,6 +645,7 @@ nav #head #log a {
     width: 200px; 
     background-color: rgb(57, 57, 177); 
     color: white; 
+    
 }
 
 /*  login page  user login */
@@ -653,7 +656,7 @@ nav #head #log a {
     align-items: center;
     justify-content: space-around; 
     height: 100vh; 
-    background-color: rgb(241, 234, 219); 
+    background: linear-gradient(rgb(178, 199, 245) 20%, rgb(214, 245, 250) 80%); 
     position: relative; 
     top: 63px; 
 }
