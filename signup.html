@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- due to charset diferent char will  support $ @ #  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- due to meta tag  media queryy works -->
+    <title>Sign-up</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -18,6 +20,7 @@
 </head>
 
 <body>
+
     <header>
         <nav>
             <div id="head">
@@ -32,46 +35,52 @@
 
     <main>
         <article id="register">
+
             <form>
-                <h1>User Registration </h1> 
+                <h1>User Registration </h1>
                 <br>
-                <p class="regerr" id="errname"></p> 
-                <div> Full Name</div> 
-                <input type="name" name="name" id="name"> <br> 
+                <!-- error lower case -->
+                <div> Full Name</div>
+                <input type="name" name="name" id="Signname"> 
+                <p class="signerr" id="errname"></p>
+                <br>
+                <!--   ip value in  UPPER -->
+                <div> Email Id</div>
+                <input type="email" name="email" id="Signemail">
+                <p class="signerr" id="erremail"></p>
+                <br>
 
-                <p class="regerr" id="erremail"></p>
-                <div> Email Id</div>  
-                <input type="email" name="email" id="email"> <br>
+                <div> Contact No.</div>
+                <input type="con" name="con" id="Signcon">
+                <p class="signerr" id="errcon"></p>        
+                <br>
 
-                <p class="regerr" id="errcontact"></p> 
-                <div> Contact No.</div> 
-                <input type="contact" name="contact" id="contact"> <br> 
+                <div> Password</div>
+                <input type="pass" name="pass" id="Signpass">
+                <p class="signerr" id="errpass"> </p>               
+                <br>
 
-                <p class="regerr" id="errpass"> </p> 
-                <div> Password</div> 
-                <input type="password" name="password" id="password"> <br> 
+                <div> Confirm Password</div>
+                <input type="cpass" name="cpass" id="Signcpass">
+                <p class="signerr" id="errcpass"></p>                
+                <br>
 
-                <p class="regerr" id="errcpass"></p>
-                <div> Confirm Password</div>   
-                <input type="cpassword" name="cpassword" id="cpassword"> <br> 
+                <!-- <button name="clear" type="clear" id="clear" onclick="return Signup()"> Clear</button> &ensp; &ensp;
+                &ensp; -->
 
-                <button name="clear" type="clear" id="clear" onclick="return clear()"> Clear</button> &ensp; &ensp;
-                &ensp;
-
-                <button name="signup" type="signup" id="signup" onclick="return validate()"> Sign-Up</button>
+                <button name="signup" type="submit" id="signbtn" onclick="return checkSign()"> Sign-Up </button>
 
                 <p>Already have an Account? <a href="login.html"> Login </a></p>
             </form>
-
             <img src="/register/regist.jpg" alt="register">
+            
         </article>
-
     </main>
 
     <footer>
-
     </footer>
 
+    <script src="/localSign.js"> </script>
 </body>
 
 </html>

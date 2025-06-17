@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -35,26 +35,28 @@
             <form>
                 <h1>Login here </h1> <br> 
                
-                <p>Email Id</p> <p class="regerr" id="erremail"></p> 
-                <input type="email" name="email" id="email"> <br><br>
+                <div>Email Id</div>  
+                <input type="email" name="email" id="Logemail"> 
+                <p class="logerr" id="erremail"></p>  <br>
 
-                <p>Password</p> <p class="regerr" id="errpass"></p> 
-                <input type="password" name="password" id="password">  <br> <br>
+                <div>Password</div>  
+                <input type="password" name="password" id="Logpass"> 
+                <p class="logerr" id="errpass"></p>  <br>
 
-                <button name="login" type="login" id="login" onclick="return validate()">Login</button>  
+                <button name="login" type="submit" id="logbtn" onclick="return checkLogin()">Log-in</button>  
 
                 <p>First time user?  Register Now!</p>
             </form> 
-
             <img src="/register/log.jpg" alt="register"> 
+
         </article>
 
     </main>
 
     <footer>
-
     </footer>
 
+    <script src="/localSign.js"> </script> 
 </body>
 
 </html>
