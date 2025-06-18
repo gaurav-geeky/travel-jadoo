@@ -15,6 +15,8 @@
         href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Bungee+Tint&family=Pacifico&family=Tektur:wght@400..900&display=swap"
         rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,11 +24,11 @@
     <header>
         <nav>
             <div id="head">
-                <div id="log"> <a href="index.html"> Jadoo </a> &emsp; &emsp; &emsp; </div>
-                <p>Destinations</p>
-                <p> <a href="signup.html"> Sign-up </a></p>
-                <p> <a href="flights.html"> Book Flights </a> </p>
-                <p> <a href="login.html"> Login </a> </p>
+                <div id="log"> <a href="home.html"> Jadoo </a> &emsp; &emsp; &emsp; </div>
+                <p data-aos="fade-down" data-aos-duration="1000" >Destinations</p>
+                <p data-aos="fade-down" data-aos-duration="1200"> <a href="index.html"> Sign-up </a></p>
+                <p data-aos="fade-down" data-aos-duration="1500"> <a href="flights.html"> Book Flights </a> </p>
+                <p data-aos="fade-down" data-aos-duration="1800"> <a href="login.html"> Login </a> </p>
             </div>
         </nav>
     </header>
@@ -67,9 +69,9 @@
                                 <i class="fa-solid fa-calendar-days" style="color: rgb(245, 96, 96);"></i>
                             </p>
                         </div>
-                    </form> 
+                    </form>
 
-                    
+
                     <!--                         passenger  -->
                     <form id="passenger">
                         <div class="area">
@@ -271,11 +273,16 @@
 
                 </div>
 
-            </article> 
+            </article>
 
         </section>
 
     </main>
+<!--  AOS files -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

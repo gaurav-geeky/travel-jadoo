@@ -81,7 +81,7 @@ let checkLogin = () => {
 
     if (logemail == localemail && logpass == localpass) {
 
-        location.href = "index.html"
+        location.href = "home.html"
         return false
     }
     else {
