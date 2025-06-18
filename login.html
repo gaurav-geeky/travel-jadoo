@@ -31,32 +31,42 @@
     </header>
 
     <main>
-        <article id="Loginpage">
+        <article id="Loginpage">  
+
             <form>
-                <h1>Login here </h1> <br> 
-               
-                <div>Email Id</div>  
-                <input type="email" name="email" id="Logemail"> 
-                <p class="logerr" id="erremail"></p>  <br>
+                <h1>Login here <i class="fa-solid fa-circle-user" style="color: #121212;"></i> </h1> <br>
 
-                <div>Password</div>  
-                <input type="password" name="password" id="Logpass"> 
-                <p class="logerr" id="errpass"></p>  <br>
+                <div>Email Id</div>
+                <input type="email" name="email" id="Logemail">
+                <p class="logerr" id="erremail"></p> <br>
 
-                <button name="login" type="submit" id="logbtn" onclick="return checkLogin()">Log-in</button>  
+                <div>Password</div>
+                <input type="password" name="password" id="Logpass">
+                <p class="logerr" id="errpass"></p> <br>
 
-                <p>First time user?  Register Now!</p>
+                <button name="login" type="submit" id="logbtn" onclick="return checkLogin()">Log-in</button>
+
+                <p>First time user? Register Now!</p>
             </form> 
-            <img src="/register/log.jpg" alt="register"> 
-
+            
+            <!-- <img src="/register/log.jpg" alt="register">  -->
+            <img id="logplane" src="/register/flyplane.png" alt="plane">
         </article>
+        
 
     </main>
 
     <footer>
     </footer>
 
-    <script src="/localSign.js"> </script> 
+    <script src="/localSign.js"> </script>
+
+    <!-- animation vanta -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+
+    <script src="vantalogcloud.js"></script>
+
 </body>
 
 </html>

@@ -95,10 +95,18 @@ let checkLogin = () => {
 
 
 
+//  now welcome user 
+{
+const naam = localStorage.getItem('Name');
+    const welcomeEl = document.getElementById('welcome-message');
 
-
-
-
+    if (naam) {
+      welcomeEl.innerHTML = `Welcome, ${naam}`; 
+      welcomeEl.style.color = "red";
+    } else {
+      welcomeEl.innerHTML = " Guest";
+    }
+}
 
 
 
