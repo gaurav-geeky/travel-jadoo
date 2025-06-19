@@ -676,30 +676,75 @@ nav #head #log a {
     /* border: 1px solid blue;  */
     display: flex;  
     align-items: center;
-    justify-content: center; 
+    justify-content: space-around; 
+    gap: 9%; 
     height: 100vh; 
     background: linear-gradient(rgb(178, 199, 245) 20%, rgb(214, 245, 250) 80%); 
     position: relative; 
     top: 55px; 
+} 
+/*  login page   right side */
+#Loginpage #wellog { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    /* border: 1px solid green;  */
+} 
+/* 2nd ka   1st */
+#Loginpage #wellog #logmap { 
+    height: 350px; 
+    width: auto;
 }
+/* 2nd ka   2nd */
+#Loginpage #weljadoo { 
+    font-family: Pacifico; 
+    font-size: 25px;
+}
+/* 2nd ka   3rd */
+#Loginpage #wellog #typlog { 
+    /* border: 1px solid red;  */
+    height: auto;
+    width: 450px; 
+    font-size: 30px; 
+    color: rgb(107, 11, 241); 
+    margin: 5px 0px;
+ 
+}  
+/* 2nd ka   4th */
+#Loginpage #wellog #typlog2 { 
+    height: auto;
+    width: 450px; 
+    font-size: 30px; 
+    color: blue; 
+    margin: 5px 0px;
+    /* border: 1px solid palevioletred;  */
+} 
+
+
 /* log play flying */
 #Loginpage #logplane { 
     height: 100px;
     width: auto; 
     position: absolute; 
     left: 0px; 
-    /* top: 0px;  */
     bottom: 0px;
+}
+/*  login page   left side */
+#Loginpage form { 
+    font-size: 20px; 
+    /* border: 1px solid blue;  */
+    /* background: transparent; */
+    /* background-image: url(/register/conworld.png); */
 }
 #Loginpage form input { 
     font-size: 25px; 
-    width: 550px; 
+    width: 450px; 
     font-family: 'Times New Roman';
-    /* border-radius: 2px; */
-}
-#Loginpage form { 
-    font-size: 20px; 
-    /* border: 1px solid red;  */
+    opacity: 0.8;  
+    background: transparent;
+    border-radius: 20px; 
 }
 #Loginpage form p { 
     margin: 5px;

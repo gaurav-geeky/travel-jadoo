@@ -8,10 +8,12 @@ VANTA.CLOUDS({
     gyroControls: false,
     minHeight: 200.00,
     minWidth: 200.00,
-    backgroundColor: 0xfdae5,
-    skyColor: 0xa7a7b1,
-    cloudColor: 0xf7dfb7,
-    cloudShadowColor: 0x1a1850
+    backgroundColor: 0x10f2e1,
+    skyColor: 0x657bea,
+    cloudColor: 0xdeadd8,
+    sunColor: 0x18ffaa,
+    sunGlareColor: 0x387ee0,
+    speed: 1.80
 })
 
 //  plane flying  top-right  js 

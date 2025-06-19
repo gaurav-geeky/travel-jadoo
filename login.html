@@ -24,16 +24,16 @@
         <nav>
             <div id="head">
                 <div id="log"> <a href="home.html"> Jadoo </a> &emsp; &emsp; &emsp; </div>
-                <p data-aos="fade-down" data-aos-duration="1000" >Destinations</p>
+                <p data-aos="fade-down" data-aos-duration="1000">Destinations</p>
                 <p data-aos="fade-down" data-aos-duration="1200"> <a href="index.html"> Sign-up </a></p>
-                <p data-aos="fade-down" data-aos-duration="1500"> <a href="flights.html"> Book Flights </a> </p>
-                <p data-aos="fade-down" data-aos-duration="1800"> <a href="login.html"> Login </a> </p>
-            </div> 
+                <p data-aos="fade-down" data-aos-duration="1400"> <a href="flights.html"> Book Flights </a> </p>
+                <p data-aos="fade-down" data-aos-duration="1600"> <a href="login.html"> Login </a> </p>
+            </div>
         </nav>
     </header>
 
     <main>
-        <article id="Loginpage">  
+        <article id="Loginpage">
 
             <form>
                 <h1>Login here <i class="fa-solid fa-circle-user" style="color: #121212;"></i> </h1> <br>
@@ -49,14 +49,20 @@
                 <button name="login" type="submit" id="logbtn" onclick="return checkLogin()">Log-in</button>
 
                 <p>First time user? <a href="index.html"> Sign-up </a></p>
-            </form> 
+            </form>
 
-            <!-- <img src="/register/log.jpg" alt="register">  -->
-            <img id="logplane" src="/register/flyplane.png" alt="plane"> 
+            <span id="wellog">
+                <img id="logmap" src="/register/world.png" alt="pic">
+                <p id="weljadoo">Welcome to Jadoo</p>
+                <h1 id="typlog"> </h1>
+                <h1 id="typlog2"></h1>
+            </span>
+
+            <img id="logplane" src="/register/flyplane.png" alt="plane">
 
 
         </article>
-        
+
 
     </main>
 
@@ -69,14 +75,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
 
-    <script src="vantalogcloud.js"></script> 
+    <script src="vantalogcloud.js"></script>
 
-<!--  AOS files -->
+    <!--  AOS files -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <!--   typed js file -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#typlog', {
+            strings: [`^10000 Enjoy the  magic of clouds `],
+            typeSpeed: 100,
+            loop: true, 
+            showCursor: false 
+        })
+    </script>
+
+    <script>
+        var typed = new Typed('#typlog2', {
+            strings: [` The sky is not the limit, it's just the beginning.`],
+            typeSpeed: 150,
+            loop: true, 
+            showCursor: false 
+        })
+    </script>
     
+
 </body>
 
 </html>
