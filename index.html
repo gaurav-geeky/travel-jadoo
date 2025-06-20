@@ -21,6 +21,8 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- to connect AOS library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--  to connect swipper js flip -->
 </head>
 
 <body>
@@ -29,11 +31,11 @@
         <nav>
             <div id="head">
                 <div id="log"> <a href="home.html"> Jadoo </a> &emsp; &emsp; &emsp; </div>
-                <p data-aos="fade-down" data-aos-duration="1000" >Destinations</p>
+                <p data-aos="fade-down" data-aos-duration="1000">Destinations</p>
                 <p data-aos="fade-down" data-aos-duration="1200"> <a href="index.html"> Sign-up </a></p>
                 <p data-aos="fade-down" data-aos-duration="1400"> <a href="flights.html"> Book Flights </a> </p>
                 <p data-aos="fade-down" data-aos-duration="1600"> <a href="login.html"> Login </a> </p>
-            </div> 
+            </div>
         </nav>
     </header>
 
@@ -76,7 +78,32 @@
 
                 <p>Already have an Account? <a href="login.html"> Login </a></p>
             </form>
-            <img src="/register/regist.jpg" alt="register" data-aos="fade-down-left" data-aos-duration="1000" >
+            <!-- <img src="/register/airport.jpg" alt="register" data-aos="fade-down-left" data-aos-duration="1000"> -->
+
+            <!-- Swiper 1 -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/register/beach sea.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/register/chicago.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/register/desert.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/register/forest.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/register/mountain.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- swipper 1 end --> 
 
         </article>
     </main>
@@ -90,14 +117,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <script src="vantasign.js"></script>
-    <!--  cntrol  +  click   automatic create file --> 
+    <!--  cntrol  +  click   automatic create file -->
 
-<!--  AOS files -->
+    <!--  AOS files -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script> 
-    
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="signSwipper1"> </script>
 </body>
 
 </html>

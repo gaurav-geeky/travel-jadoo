@@ -30,7 +30,8 @@ function animation() {
         poe++;
         plane.style.bottom = poe + "px";
         plane.style.left = poe + "px";
-    }
+    } 
+    
 }
 
 
