@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight book</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Bungee+Tint&family=Pacifico&family=Tektur:wght@400..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="head">
+                <div id="log"> <a href="home.html"> Jadoo </a> &emsp; &emsp; &emsp; </div>
+                <p data-aos="fade-down" data-aos-duration="1000"> <a href="passDetails.html"> GIST</a></p>
+                <p data-aos="fade-down" data-aos-duration="1200"> <a href="index.html"> Sign-up </a></p>
+                <p data-aos="fade-down" data-aos-duration="1400"> <a href="flights.html"> Book Flights </a> </p>
+                <p data-aos="fade-down" data-aos-duration="1600"> <a href="login.html"> Login </a> </p>
+                <!-- <h2 id="welcome-message"> </h2> -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article id="passdetail1">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Departure</th>
+                        <th>Return</th>
+                        <th>Adult</th>
+                        <th>Child</th>
+                        <th>Infant</th>
+                        <th>Senior</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="show">
+
+                </tbody>
+
+            </table>
+        </article>
+    </main>
+
+    <!--  AOS files -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="/crud.js"> </script>
+    <!--  js file where data converted into table  -->
+</body>
+
+</html>

@@ -25,7 +25,7 @@
         <nav>
             <div id="head">
                 <div id="log"> <a href="home.html"> Jadoo </a> &emsp; &emsp; &emsp; </div>
-                <p data-aos="fade-down" data-aos-duration="1000" >Destinations</p>
+                <p data-aos="fade-down" data-aos-duration="1000"> <a href="passDetails.html"> GIST</a></p> 
                 <p data-aos="fade-down" data-aos-duration="1200"> <a href="index.html"> Sign-up </a></p>
                 <p data-aos="fade-down" data-aos-duration="1400"> <a href="flights.html"> Book Flights </a> </p>
                 <p data-aos="fade-down" data-aos-duration="1600"> <a href="login.html"> Login </a> </p>
@@ -36,6 +36,8 @@
     <main>
         <section id="flight1">
             <!--                                    body 1 -->
+            <span id="atcvdo"> <video src="/video/ATC.mp4" muted autoplay loop></video> </span>
+            <a id="download" href="/video/ATC.mp4" download>DOWNLOAD </a>
             <article id="air">
                 <h1>Search for a Flight</h1>
                 <article class="search">
@@ -278,12 +280,14 @@
         </section>
 
     </main>
-<!--  AOS files -->
+    <!--  AOS files -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 
+    <!-- crud js connect -->
+    <!-- <script src="/crud.js"> </script> -->
 </body>
 
 </html>

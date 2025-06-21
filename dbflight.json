@@ -1,0 +1,18 @@
+
+{
+  "flight": [
+    {
+      "From": "Delhi",
+      "To": "Bhopal",
+      "Departure": "22/06/2025",
+      "Return": "29/06/2025",
+      "Adult": 2,
+      "Child": 2,
+      "Infant": 0,
+      "Senior": 1,
+      "id": "bdf6"
+    }
+  ]
+}
+
+
