@@ -1,18 +1,28 @@
-
 {
   "flight": [
     {
-      "From": "Delhi",
-      "To": "Bhopal",
-      "Departure": "22/06/2025",
-      "Return": "29/06/2025",
-      "Adult": 2,
-      "Child": 2,
-      "Infant": 0,
-      "Senior": 1,
-      "id": "bdf6"
+      "id": "779b",
+      "From": "dubai",
+      "To": "singapore",
+      "Departure": "2025-06-26",
+      "Return": "2025-06-30",
+      "Adult": "1",
+      "Child": "1",
+      "Infant": "1",
+      "Senior": "1",
+      "Total": 2000
+    },
+    {
+      "id": "2cf8",
+      "From": "malasia",
+      "To": "thailand",
+      "Departure": "2025-06-18",
+      "Return": "2025-06-19",
+      "Adult": "1",
+      "Child": "1",
+      "Infant": "1",
+      "Senior": "1",
+      "Total": 2000
     }
   ]
 }
-
-

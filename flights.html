@@ -25,7 +25,7 @@
         <nav>
             <div id="head">
                 <div id="log"> <a href="home.html"> Jadoo </a> &emsp; &emsp; &emsp; </div>
-                <p data-aos="fade-down" data-aos-duration="1000"> <a href="passDetails.html"> GIST</a></p> 
+                <p data-aos="fade-down" data-aos-duration="1000"> <a href="passDetails.html"> GIST</a></p>
                 <p data-aos="fade-down" data-aos-duration="1200"> <a href="index.html"> Sign-up </a></p>
                 <p data-aos="fade-down" data-aos-duration="1400"> <a href="flights.html"> Book Flights </a> </p>
                 <p data-aos="fade-down" data-aos-duration="1600"> <a href="login.html"> Login </a> </p>
@@ -42,63 +42,66 @@
                 <h1>Search for a Flight</h1>
                 <article class="search">
                     <!--                             search  -->
-                    <form id="bookair">
-                        <div class="area">
-                            From
-                            <p><label for="place"></label>
-                                <input name="place" id="place" type="text" placeholder="   City/Airport">
-                                <i class="fa-solid fa-magnifying-glass" style="color: rgb(245, 96, 96);"></i>
-                            </p>
+                    <form id="form" action="">
+
+                        <div id="placedate">
+                            <div class="area">
+                                From
+                                <p>
+                                    <input name="place" id="fromwhere" type="text" placeholder="   City/Airport">
+                                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(245, 96, 96);"></i>
+                                </p>
+                            </div>
+                            <div class="area">
+                                To
+                                <p>
+                                    <input name="place" id="towhere" type="text" placeholder="   City/Airport">
+                                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(245, 96, 96);"></i>
+                                </p>
+                            </div>
+                            <div class="area">
+                                Departure Date
+                                <p>
+                                    <input name="date" id="depart" type="date" placeholder="Date">
+                                    <i class="fa-solid fa-calendar-days" style="color: rgb(245, 96, 96);"></i>
+                                </p>
+                            </div>
+                            <div class="area">
+                                Return Date
+                                <p>
+                                    <input name="date" id="returns" type="date" placeholder="Date">
+                                    <i class="fa-solid fa-calendar-days" style="color: rgb(245, 96, 96);"></i>
+                                </p>
+                            </div>
                         </div>
-                        <div class="area">
-                            To
-                            <p> <label for="place"></label>
-                                <input name="place" id="place" type="text" placeholder="   City/Airport">
-                                <i class="fa-solid fa-magnifying-glass" style="color: rgb(245, 96, 96);"></i>
-                            </p>
+
+                        <!--                         passenger  -->
+                        <div id="passenger">
+                            <div class="area">
+                                Adult
+                                <p> <input name="adult" id="adult" type="number"> </p>
+                            </div>
+                            <div class="area">
+                                Child
+                                <p> <input name="child" id="child" type="number"> </p>
+                            </div>
+                            <div class="area">
+                                Infant
+                                <p> <input name="infant" id="infant" type="number"> </p>
+                            </div>
+                            <div class="area">
+                                Senior
+                                <p> <input name="senior" id="senior" type="number"> </p>
+                            </div>
                         </div>
-                        <div class="area">
-                            Departure Date
-                            <p> <label for="place"></label>
-                                <input name="date" id="place" type="date" placeholder="Date">
-                                <i class="fa-solid fa-calendar-days" style="color: rgb(245, 96, 96);"></i>
-                            </p>
-                        </div>
-                        <div class="area">
-                            Return Date
-                            <p> <label for="place"></label>
-                                <input name="date" id="place" type="date" placeholder="Date">
-                                <i class="fa-solid fa-calendar-days" style="color: rgb(245, 96, 96);"></i>
-                            </p>
-                        </div>
+                        <!--                       book now  -->
+
+                        <article id="booknow">
+                            <!-- <button name="book" type="submit"> Book Now</button> -->
+                            <input type="submit" onclick="return ins()" value="Book">
+                        </article>
+
                     </form>
-
-
-                    <!--                         passenger  -->
-                    <form id="passenger">
-                        <div class="area">
-                            Adult
-                            <p> <label for="person"></label> <input name="adult" id="person" type="number"> </p>
-                        </div>
-                        <div class="area">
-                            Child
-                            <p> <label for="person"></label> <input name="child" id="person" type="number"> </p>
-                        </div>
-                        <div class="area">
-                            Infant
-                            <p> <label for="person"></label> <input name="infant" id="person" type="number"> </p>
-                        </div>
-                        <div class="area">
-                            Senior
-                            <p> <label for="person"></label> <input name="senior" id="person" type="number"> </p>
-                        </div>
-                    </form>
-
-                    <!--                       book now  -->
-                    <article id="booknow">
-                        <button name="book" type="submit"> Book Now</button>
-                    </article>
-
                 </article>
             </article>
         </section>
@@ -287,7 +290,9 @@
     </script>
 
     <!-- crud js connect -->
-    <!-- <script src="/crud.js"> </script> -->
+    <script src="/crud.js"> </script>
 </body>
 
 </html>
+
+
