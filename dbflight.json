@@ -1,11 +1,11 @@
 {
   "flight": [
     {
-      "id": "779b",
-      "From": "dubai",
-      "To": "singapore",
-      "Departure": "2025-06-26",
-      "Return": "2025-06-30",
+      "id": "5e9d",
+      "From": "delhi",
+      "To": "bhopal",
+      "Departure": "2025-06-13",
+      "Seat": "First",
       "Adult": "1",
       "Child": "1",
       "Infant": "1",
@@ -13,11 +13,23 @@
       "Total": 2000
     },
     {
-      "id": "2cf8",
-      "From": "malasia",
-      "To": "thailand",
-      "Departure": "2025-06-18",
-      "Return": "2025-06-19",
+      "id": "ffe5",
+      "From": "delhi",
+      "To": "patna",
+      "Departure": "2025-06-04",
+      "Seat": "Economy",
+      "Adult": "0",
+      "Child": "1",
+      "Infant": "1",
+      "Senior": "1",
+      "Total": 1500
+    },
+    {
+      "id": "7ee6",
+      "From": "ahemadabad",
+      "To": "london",
+      "Departure": "2025-06-27",
+      "Seat": "Business",
       "Adult": "1",
       "Child": "1",
       "Infant": "1",

@@ -5,48 +5,49 @@ let fetchdt = async () => {
     let url = "http://localhost:3000/flight";
     let response = await fetch(url)    // only GET can run without GET k.w.
 
-    let data = await response.json()
+    let data = await response.json()  //    GET method fetch
     console.log(data);
 
-    // now get data in table. 
-    
-    let show = document.querySelector('#show'); 
 
-    data.map( (e)=> {
+    let show = document.querySelector('#show');
 
-    show.innerHTML += ` 
+    data.map((e) => {
+        //                       now get data in table. 
+        show.innerHTML += ` 
         <tr> 
             <td> ${e.From}</td> 
             <td> ${e.To}</td> 
             <td> ${e.Departure}</td> 
-            <td> ${e.Return}</td> 
+            <td> ${e.Seat}</td> 
             <td> ${e.Adult}</td> 
             <td> ${e.Child}</td> 
             <td> ${e.Infant}</td> 
             <td> ${e.Senior}</td> 
             <td> ${e.Total}</td> 
             <td onclick="Del('${e.id}') "> delete </td> 
+            <td onclick="formopen('${e.id}') "> edit </td> 
         </tr>
     `
-    }
-    )
+    } 
+    ) 
 }
 // fetchdt();
 
+
 //   DELETE method 
-let Del = (id)=> { 
-    let url = `http://localhost:3000/flight/${id}` 
-    fetch(url, {method: "DELETE"})
+let Del = (id) => {
+    let url = `http://localhost:3000/flight/${id}`
+    fetch(url, { method: "DELETE" })
 }
 
 
 //  POST method 
-let ins = () => { 
+let ins = () => {
 
     let From = document.querySelector('#fromwhere').value
     let To = document.querySelector('#towhere').value
     let Departure = document.querySelector('#depart').value
-    let Return = document.querySelector('#returns').value
+    let Seat = document.querySelector('#seat').value 
     let Adult = document.querySelector('#adult').value
     let Child = document.querySelector('#child').value
     let Infant = document.querySelector('#infant').value
@@ -54,34 +55,151 @@ let ins = () => {
 
     let url = "http://localhost:3000/flight";
 
-    fetch( url, {
+    fetch(url, {
 
-        method: "POST", 
+        method: "POST",
 
-        headers: { 
+        headers: {
             "Content-type": "application/json"
-        }, 
-        
-        body: JSON.stringify( 
+        },
+
+        body: JSON.stringify(
 
             {
-                From: From, 
-                To: To, 
-                Departure: Departure, 
-                Return: Return, 
-                Adult: Adult, 
-                Child: Child, 
-                Infant: Infant, 
-                Senior: Senior, 
-                Total: 500*Adult+ 500*Child+ 500*Infant+ 500*Senior, 
+                From: From,
+                To: To,
+                Departure: Departure,
+                 Seat: Seat, 
+                Adult: Adult,
+                Child: Child,
+                Infant: Infant,
+                Senior: Senior,
+                Total: 500 * Adult + 500 * Child + 500 * Infant + 500 * Senior,
 
                 // here key name should be same as tbody td key name
             }
         )
-    })   
-    location.href="passDetails.html" 
+    })
 
-    return false 
+    location.href = "passDetails.html"
+    return false
+}
+
+
+// PUT method  to update data ... 
+
+let formopen = async (id) => {
+
+    let url = `http://localhost:3000/flight/${id}` 
+
+    let res = await fetch(url)
+    let data = await res.json()
+
+    let FormData = `
+                <div id="editform">    
+                        <div id="placedate">
+                            <div class="fields" class="area">
+                                From
+                                <p >
+                                    <input name="place" id="upfromwhere" type="text" placeholder="City/Airport" value="${data.From}">
+                                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(245, 96, 96);"></i>
+                                </p>
+                            </div>
+                            <div class="fields" class="area">
+                                To
+                                <p>
+                                    <input name="place" id="uptowhere" type="text" placeholder="City/Airport" value="${data.To}">
+                                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(245, 96, 96);"></i>
+                                </p>
+                            </div>
+                            <div class="fields" class="area">
+                                Departure Date
+                                <p >
+                                    <input name="date" id="updepart" type="date" placeholder="Date" value="${data.Departure}">
+                                    <i class="fa-solid fa-calendar-days" style="color: rgb(245, 96, 96);"></i>
+                                </p>
+                            </div>
+                            <div class="fields" class="area">
+                                Seating class
+                                <select  id="upseat">
+                                    <option value="Business">Business</option>
+                                    <option value="Economy">Economy</option>
+                                    <option value="First">First</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!--                         passenger  -->
+                        <div id="passenger">
+                            <div class="fields" class="area">
+                                Adult
+                                <p> <input name="adult" id="upadult" type="number" value="${data.Adult}"> </p>
+                            </div>
+                            <div class="fields" class="area">
+                                Child
+                                <p> <input name="child" id="upchild" type="number" value="${data.Child}"> </p>
+                            </div>
+                            <div class="fields" class="area">
+                                Infant
+                                <p> <input name="infant" id="upinfant" type="number" value="${data.Infant}"> </p>
+                            </div>
+                            <div class="fields" class="area">
+                                Senior
+                                <p> <input name="senior" id="upsenior" type="number" value="${data.Senior}"> </p>
+                            </div>
+                        </div>
+                        <!--                       book now  -->
+
+                        <article id="booknow">
+                            <input type="submit" onclick="return UpdateForm('${data.id}')" value="Update"> 
+                        </article>
+                </div>
+    `
+    document.querySelector('#formShow').innerHTML = FormData
+
+}
+
+let UpdateForm = (id) => {
+
+    let From = document.querySelector('#upfromwhere').value
+    let To = document.querySelector('#uptowhere').value
+    let Departure = document.querySelector('#updepart').value
+     let Seat = document.querySelector('#upseat').value
+    let Adult = document.querySelector('#upadult').value
+    let Child = document.querySelector('#upchild').value
+    let Infant = document.querySelector('#upinfant').value
+    let Senior = document.querySelector('#upsenior').value
+
+    let url = `http://localhost:3000/flight/${id}`;
+
+    fetch(url, {
+
+        method: "PUT",
+
+        headers: {
+            "Content-type": "application/json"
+        },
+
+        body: JSON.stringify(
+
+            {
+                From: From,
+                To: To,
+                Departure: Departure,
+                Seat: Seat,
+                Adult: Adult,
+                Child: Child,
+                Infant: Infant,
+                Senior: Senior,
+                Total: 500 * Adult + 500 * Child + 500 * Infant + 500 * Senior,
+
+                // here key name should be same as tbody td key name (dt. in table)
+            } 
+        )
+    })
+    location.href = "passDetails.html"
+
+    return false
 }
 
 
@@ -108,9 +226,4 @@ let ins = () => {
 
 
 
-
-
-
-
-
-
+ 
