@@ -973,4 +973,65 @@ nav #head #log a {
 
 
 
+/*  footer start */
+#indfoot1 {
+    width: 100%;
+    height: auto;
+    background-color: rgb(171, 198, 241);
+    color: black;
+    cursor: pointer; 
+}
+
+/*                                   inside footer */
+#indfoot1 #foot {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+#indfoot1 #foot .contact #qrcode {
+    width: 70px;
+    height: 70px;
+}
+#indfoot1 #foot .contact img {
+    width: 150px;
+    height: 45px;
+}
+
+#foot .category,
+#foot .service, 
+#foot .partnerpro {
+    line-height: 30px;
+} 
+
+#foot .category ul ,
+#foot .service ul,
+ #foot .partnerpro ul { 
+    list-style: none;
+}
+
+#foot .category h4,
+#foot .service h4,
+#foot .partnerpro h4 {
+    text-decoration: underline solid;
+}
+
+#indfoot1 #foot ul {
+    margin-left: 22px;
+}
+
+#indfoot1 .copyright {
+    text-align: center;
+    padding: 10px;
+}
+
+/* font increase */
+#indfoot1 #foot h4 {
+    font-size: 18px;
+}
+
+#indfoot1 #foot h1 {
+    font-size: 35px;
+}
+
 
