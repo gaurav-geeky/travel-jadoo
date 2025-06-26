@@ -923,13 +923,15 @@ nav #head #log a {
     width: 100%;
     height: auto; 
     padding: 10px; 
+    background-color: rgb(231, 252, 248); 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     /* border: 1px solid brown; */
-    background-color: rgb(231, 252, 248);
 }
 #passdetail1 table tr th, #passdetail1 table tr td { 
     padding: 10px; 
 }
-
 #passdetail1 table thead { 
     margin: 50px;
 }
@@ -939,7 +941,10 @@ nav #head #log a {
     background-color: aliceblue; 
     text-align: center;  
 }
-
+#passdetail1 img { 
+    width: 450px;
+    height: auto;
+}
 #formShow { 
     width: 100%;
     font-size: 18px; 
