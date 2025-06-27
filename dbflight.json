@@ -59,6 +59,18 @@
       "Infant": "1",
       "Senior": "1",
       "Total": 2000
+    },
+    {
+      "From": "india",
+      "To": "sir lanka",
+      "Departure": "2025-06-05",
+      "Seat": "Business",
+      "Adult": "1",
+      "Child": "1",
+      "Infant": "",
+      "Senior": "1",
+      "Total": 1500,
+      "id": "6e8f"
     }
   ]
 }
