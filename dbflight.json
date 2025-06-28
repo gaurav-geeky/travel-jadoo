@@ -37,16 +37,16 @@
       "Total": 2000
     },
     {
-      "id": "fa31",
       "From": "dubai",
       "To": "italy",
       "Departure": "2025-06-19",
-      "Seat": "Business",
+      "Seat": "Economy",
       "Adult": "1",
       "Child": "1",
       "Infant": "0",
       "Senior": "0",
-      "Total": 1000
+      "Total": 1000,
+      "id": "fa31"
     },
     {
       "id": "4d31",

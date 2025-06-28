@@ -1,4 +1,4 @@
-// FETCH DATA     URL    FETCH 
+// FETCH DATA  get method
 
 let fetchdt = async () => {
 
@@ -8,8 +8,30 @@ let fetchdt = async () => {
     let data = await response.json()  //    GET method fetch
     console.log(data);
 
+    DataShow(data)
+}
+//  search in passenger details
+let searchh = async ()=> { 
 
+    let searchinp = document.querySelector('#searchinp').value.toLowerCase() 
+    let url = "http://localhost:3000/flight";
+
+    let response = await fetch(url)    // only GET can run without GET k.w.
+    let data = await response.json()  //    GET method fetch
+    
+
+    let FilterData = data.filter((e) => { 
+
+        return e.From.toLowerCase().includes(searchinp) || e.To.toLowerCase().includes(searchinp) ||  e.Seat.toLowerCase().includes(searchinp) || e.Total.toString().includes(searchinp) 
+    })
+    DataShow(FilterData) 
+
+}
+
+// show data in table
+let DataShow = (data) => {
     let show = document.querySelector('#show');
+    show.innerHTML=""; 
 
     data.map((e) => {
         //                       now get data in table. 
@@ -24,14 +46,38 @@ let fetchdt = async () => {
             <td> ${e.Infant}</td> 
             <td> ${e.Senior}</td> 
             <td> ${e.Total}</td> 
-            <td onclick="Del('${e.id}') "> delete </td> 
-            <td onclick="formopen('${e.id}') "> edit </td> 
+            <td onclick="Conf('${e.id}') "> delete </td> 
+            <td onclick="formopen('${e.id}')"> edit </td> 
         </tr>
     `
-    } 
-    ) 
+    }
+    )
 }
+
 // fetchdt();
+
+let Conf=(id)=>{
+
+Swal.fire({
+  title: "Are you sure?",
+  text: "You won't be able to revert this!",
+  icon: "warning",
+  showCancelButton: true,
+  confirmButtonColor: "#3085d6",
+  cancelButtonColor: "#d33",
+  confirmButtonText: "Yes, delete it!"
+}).then((result) => {
+  if (result.isConfirmed) {
+    Del(id)
+    Swal.fire({
+      title: "Deleted!",
+      text: "Your file has been deleted.",
+      icon: "success"
+    });
+  }
+});
+}
+
 
 
 //   DELETE method 
@@ -40,14 +86,13 @@ let Del = (id) => {
     fetch(url, { method: "DELETE" })
 }
 
-
 //  POST method 
 let ins = () => {
 
     let From = document.querySelector('#fromwhere').value
     let To = document.querySelector('#towhere').value
     let Departure = document.querySelector('#depart').value
-    let Seat = document.querySelector('#seat').value 
+    let Seat = document.querySelector('#seat').value
     let Adult = document.querySelector('#adult').value
     let Child = document.querySelector('#child').value
     let Infant = document.querySelector('#infant').value
@@ -69,7 +114,7 @@ let ins = () => {
                 From: From,
                 To: To,
                 Departure: Departure,
-                 Seat: Seat, 
+                Seat: Seat,
                 Adult: Adult,
                 Child: Child,
                 Infant: Infant,
@@ -90,11 +135,13 @@ let ins = () => {
 
 let formopen = async (id) => {
 
-    let url = `http://localhost:3000/flight/${id}` 
+    let url = `http://localhost:3000/flight/${id}`
 
     let res = await fetch(url)
     let data = await res.json()
 
+    let wait = document.querySelector('#waitplane'); // hide image while editing
+    wait.style.display = "none"; 
     let FormData = `
                 <div id="editform">    
                         <div id="placedate">
@@ -164,7 +211,7 @@ let UpdateForm = (id) => {
     let From = document.querySelector('#upfromwhere').value
     let To = document.querySelector('#uptowhere').value
     let Departure = document.querySelector('#updepart').value
-     let Seat = document.querySelector('#upseat').value
+    let Seat = document.querySelector('#upseat').value
     let Adult = document.querySelector('#upadult').value
     let Child = document.querySelector('#upchild').value
     let Infant = document.querySelector('#upinfant').value
@@ -194,7 +241,7 @@ let UpdateForm = (id) => {
                 Total: 500 * Adult + 500 * Child + 500 * Infant + 500 * Senior,
 
                 // here key name should be same as tbody td key name (dt. in table)
-            } 
+            }
         )
     })
     location.href = "passDetails.html"
@@ -226,4 +273,3 @@ let UpdateForm = (id) => {
 
 
 
- 

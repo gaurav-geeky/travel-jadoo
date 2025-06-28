@@ -24,7 +24,8 @@
     <header>
         <nav>
             <div id="head">
-                <div id="log"> <a href="home.html"> Jadoo </a> &emsp; &emsp; &emsp; </div>
+                <div id="log"> <a href="home.html"> <img src="/image/logo.png" alt="pic" height="40px" width="auto"> Jadoo </a>  &emsp; &emsp; &emsp; </div>
+                
                 <p data-aos="fade-down" data-aos-duration="1000"> <a href="passDetails.html"> GIST</a></p>
                 <p data-aos="fade-down" data-aos-duration="1200"> <a href="index.html"> Sign-up </a></p>
                 <p data-aos="fade-down" data-aos-duration="1400"> <a href="flights.html"> Book Flights </a> </p>
@@ -51,7 +52,13 @@
     </header>
 
     <main>
+        
         <article id="passdetail1">
+            
+            <div id="searchhere"> 
+                Search: &nbsp; <input type="text" id="searchinp" oninput="searchh()">
+            </div>
+
             <table border="1" >
                 <thead>
                     <tr>
@@ -74,9 +81,8 @@
                 </tbody>
 
             </table>
-            <img src="/register/logpass.png" alt="">
+            <img id="waitplane" src="/register/logpass.png" alt="">
         </article> 
-
         <div id="formShow"> </div>
 
     </main>
@@ -149,8 +155,12 @@
         AOS.init();
     </script>
 
-    <script src="/crud.js"> </script>
+    <!-- CDN for sweet alert  delete yes/no -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!--  js file where data converted into table  -->
+    <script src="/crud.js"> </script>
+    
 </body>
 
 </html>
