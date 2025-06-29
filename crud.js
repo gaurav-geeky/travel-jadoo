@@ -9,7 +9,8 @@ let fetchdt = async () => {
     console.log(data);
 
     DataShow(data)
-}
+} 
+
 //  search in passenger details
 let searchh = async ()=> { 
 

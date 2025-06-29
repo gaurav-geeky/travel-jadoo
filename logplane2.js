@@ -1,8 +1,8 @@
 //  plane flying  left  js 
 
-var plane2 = document.querySelector('#logplane2');
+var plane2 = document.querySelector('#logplane');
 var poe = 0;
-var flying = setInterval(animation, 10);
+var flying = setInterval(animation, 100);
 
 function animation() {
     if (poe == 500) {
@@ -10,6 +10,8 @@ function animation() {
     }
     else {
         poe++;
-        plane2.style.right = poe + "px";
+        plane2.style.left = poe + "px";
     }
 }
+
+

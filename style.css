@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-#register form .signerr {
-    color: red;
-}
+
 
 header {
     width: 100%;
@@ -790,8 +788,11 @@ nav #head #log a {
 
 #register form p {
     margin: 10px;
-}
+} 
 
+#register form .signerr {
+    color: red;
+}
 #register form button {
     font-size: 20px;
     padding: 3px;
